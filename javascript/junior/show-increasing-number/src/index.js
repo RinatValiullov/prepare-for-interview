@@ -8,7 +8,7 @@ const showNumber = () => {
   setTimeout(function output() {
     console.log(number++);
 
-    if (number > 0) {
+    if (number > 0 && number < 10) {
       setTimeout(output, number * 1000);
     }
   }, 0);
