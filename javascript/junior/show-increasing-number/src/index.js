@@ -1,7 +1,3 @@
-// let app = document.querySelector('#app');
-
-// app.innerHTML = '<h2>Welcome to show-increasing-number</h2>';
-
 const showNumber = () => {
   let number = 0;
 
