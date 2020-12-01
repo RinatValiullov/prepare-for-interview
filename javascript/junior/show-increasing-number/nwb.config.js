@@ -1,3 +1,5 @@
-module.exports = {
-  type: 'web-app'
-}
+module.exports = function (nwb) {
+  return {
+    type: 'web-app',
+  };
+};
