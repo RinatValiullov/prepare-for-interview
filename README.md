@@ -8,6 +8,7 @@
 2. [show-population](javascript/junior/show-population)
 3. [find-killer](javascript/junior/find-killer)
 4. [check-unique-characters](javascript/junior/check-unique-characters)
+5. [maximum-of-three](javascript/junior/maximum-of-three)
 
 ### Middle level
 
