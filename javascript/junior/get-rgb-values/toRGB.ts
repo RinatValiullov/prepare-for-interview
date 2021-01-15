@@ -1,5 +1,5 @@
 const toRGB = (rgbString: string): object => {
-  const [red, green, blue] = rgbString.match(/\d+/g).map(Number);
+  const [red, green, blue] = rgbString.match(/\d+/g)!.map(Number);
   return {
     red, green, blue
   }
