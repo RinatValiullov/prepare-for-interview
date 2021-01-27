@@ -1,0 +1,20 @@
+{
+  "name": "prepare-for-interview",
+  "version": "1.0.0",
+  "description": "1. [show-increasing-number](javascript/junior/show-increasing-number)\r 2. [show-population](javascript/junior/show-population)\r 3. [find-killer](javascript/junior/find-killer)\r 4. [check-unique-characters](javascript/junior/check-unique-characters)\r 5. [maximum-of-three](javascript/junior/maximum-of-three)\r 6. [get-rgb-values](javascript/junior/get-rgb-values)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RinatValiullov/prepare-for-interview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RinatValiullov/prepare-for-interview/issues"
+  },
+  "homepage": "https://github.com/RinatValiullov/prepare-for-interview#readme"
+}
