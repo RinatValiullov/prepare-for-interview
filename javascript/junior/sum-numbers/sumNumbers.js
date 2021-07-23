@@ -39,3 +39,18 @@ const num3_re = 100;
 const results_re = [sumTo_re(num1_re), sumTo_re(num2_re), sumTo_re(num3_re)];
 
 console.log(`With recursion: ${results_re}`);
+
+// with arithmetic progression
+
+const sumTo_ar = (number) => {
+  let sum = (number * (number + 1)) / 2;
+  return sum;
+};
+
+const num1_ar = 3;
+const num2_ar = 1;
+const num3_ar = 100;
+
+const results_ar = [sumTo_ar(num1_ar), sumTo_ar(num2_ar), sumTo_ar(num3_ar)];
+
+console.log(`With arithmetic progression: ${results_ar}`);
