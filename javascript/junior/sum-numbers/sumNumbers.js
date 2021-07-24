@@ -40,6 +40,27 @@ const results_re = [sumTo_re(num1_re), sumTo_re(num2_re), sumTo_re(num3_re)];
 
 console.log(`With recursion: ${results_re}`);
 
+// with tail recursion
+
+const sumTo_tre = (number, acc = 0) => {
+  if (number == 0) {
+    return acc;
+  }
+  return sumTo_tre(number - 1, number + acc);
+};
+
+const num1_tre = 3;
+const num2_tre = 1;
+const num3_tre = 100;
+
+const results_tre = [
+  sumTo_tre(num1_tre),
+  sumTo_tre(num2_tre),
+  sumTo_tre(num3_tre)
+];
+
+console.log(`With tail recursion: ${results_tre}`);
+
 // with arithmetic progression
 
 const sumTo_ar = (number) => {
