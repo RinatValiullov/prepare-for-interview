@@ -1,5 +1,5 @@
 {
-  "include": ["get-rgb-values/**/*"],
+  "include": ["repeat-symbol/**/*", "get-rgb-values/**/*"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
