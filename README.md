@@ -12,6 +12,7 @@
 7. [check-brackets](javascript/junior/check-brackets)
 8. [sum-numbers](javascript/junior/sum-numbers)
 9. [repeat-symbol](javascript/junior/repeat-symbol)
+10. [sort-numbers](javascript/junior/sort-numbers)
 
 ### Middle level
 
