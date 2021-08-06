@@ -1,4 +1,5 @@
-# Prepare-for-interview Solving tasks for an interview
+# Tasks of varying complexity (to prepare for the technical part of the interview)
+
 
 ## JavaScript
 
