@@ -14,6 +14,7 @@
 8. [sum-numbers](javascript/junior/sum-numbers)
 9. [repeat-symbol](javascript/junior/repeat-symbol)
 10. [sort-numbers](javascript/junior/sort-numbers)
+11. [range-numbers](javascript/junior/range-numbers)
 
 ### Middle level
 
