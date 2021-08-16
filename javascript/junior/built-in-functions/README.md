@@ -2,10 +2,8 @@
 
 ***
 
-  ```
-    Array.prototype.map
-    Array.prototype.filter
-    Array.prototype.flat
-  ```
+  `Array.prototype.map` - [map](map/)
+  `Array.prototype.filter` - [filter](filter/)
+  `Array.prototype.flat` - [flat](flat/)
 
 ***
