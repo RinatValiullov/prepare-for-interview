@@ -2,8 +2,7 @@
 
 ***
 
-  `Array.prototype.map` - [map](map/)
-  `Array.prototype.filter` - [filter](filter/)
-  `Array.prototype.flat` - [flat](flat/)
-
+  `Array.prototype.map` - [map](map/)  
+  `Array.prototype.filter` - [filter](filter/)  
+  `Array.prototype.flat` - [flat](flat/)  
 ***
