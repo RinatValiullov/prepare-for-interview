@@ -17,6 +17,7 @@
 11. [range-numbers](javascript/junior/range-numbers)
 12. [built-in-functions](javascript/junior/built-in-functions)
 13. [deep-copy](javascript/junior/deep-copy)
+14. [fill-array](javascript/junior/fill-array)
 
 ### Middle level
 
