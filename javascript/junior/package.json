@@ -8,6 +8,16 @@
     "test": "jest",
     "compile": "tsc"
   },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "<rootDir>/**/*.(test|spec).{js,jsx,ts,tsx}"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "html"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -15,7 +25,11 @@
     "typescript": "^4.1.3"
   },
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
     "@types/node": "^16.6.2",
+    "babel-jest": "^27.1.0",
     "jest": "^27.1.0"
   }
 }

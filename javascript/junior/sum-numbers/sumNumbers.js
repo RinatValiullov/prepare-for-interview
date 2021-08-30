@@ -75,3 +75,10 @@ const num3_ar = 100;
 const results_ar = [sumTo_ar(num1_ar), sumTo_ar(num2_ar), sumTo_ar(num3_ar)];
 
 console.log(`With arithmetic progression: ${results_ar}`);
+
+module.exports = {
+  sumTo_fl,
+  sumTo_re,
+  sumTo_tre,
+  sumTo_ar
+};

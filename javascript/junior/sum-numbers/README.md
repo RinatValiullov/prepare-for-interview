@@ -1,4 +1,4 @@
-## Write a function sumTo(number) that calculates the sum of the numbers 1 + 2 + ... + n.
+## Write a function sumTo(number) that calculates the sum of the numbers 1 + 2 + ... + number.
 
 ### Make it with three ways:
 1. with for loop
