@@ -9,7 +9,7 @@ const checkUniqueChars = (string) => {
   }
   return {
     hasUniqueCharacters: true,
-    chars,
+    chars
   };
 };
 
@@ -19,5 +19,5 @@ const anotherNick = "coder";
 const result1 = checkUniqueChars(nick);
 const result2 = checkUniqueChars(anotherNick);
 
-console.log(result1);
-console.log(result2);
+console.log(`"${nick}": ${result1}`);
+console.log(`"${anotherNick}":`, result2);
