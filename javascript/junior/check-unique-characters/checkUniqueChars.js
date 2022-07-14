@@ -13,11 +13,11 @@ const checkUniqueChars = (string) => {
   };
 };
 
-const nick = "4rontender";
-const anotherNick = "coder";
+const inputString1 = "4rontender";
+const inputString2 = "coder";
 
-const result1 = checkUniqueChars(nick);
-const result2 = checkUniqueChars(anotherNick);
+const result1 = checkUniqueChars(inputString1);
+const result2 = checkUniqueChars(inputString2);
 
-console.log(`"${nick}": ${result1}`);
-console.log(`"${anotherNick}":`, result2);
+console.log(`"${inputString1}": ${result1}`);
+console.log(`"${inputString2}":`, result2);
