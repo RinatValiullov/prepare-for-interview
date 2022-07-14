@@ -16,7 +16,10 @@
     "moduleFileExtensions": [
       "js",
       "html"
-    ]
+    ],
+    "transform": {
+      "\\.[jt]sx?$": "babel-jest"
+    }
   },
   "keywords": [],
   "author": "",

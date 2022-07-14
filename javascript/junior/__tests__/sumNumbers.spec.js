@@ -1,9 +1,4 @@
-const {
-  sumTo_fl,
-  sumTo_flsumTo_re,
-  sumTo_tre,
-  sumTo_ar
-} = require("../sum-numbers/sumNumbers");
+import { sumTo_fl } from "../sum-numbers/sumNumbers";
 
 const testCases = [
   { number: 3, expected: 6 },
