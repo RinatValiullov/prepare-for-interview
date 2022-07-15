@@ -49,4 +49,4 @@ console.log(`"123456", ${result2_S}`);
 console.log(`"abcABC", ${result3_S}`);
 console.log(`"abcaef", ${result4_S}`);
 
-export { isUnique };
+export { isUnique, isUniqueWithSet };

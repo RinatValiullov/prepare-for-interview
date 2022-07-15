@@ -1,4 +1,7 @@
-import { isUnique } from "../check-unique-characters/hasUniqueChars";
+import {
+  isUnique,
+  isUniqueWithSet
+} from "../check-unique-characters/hasUniqueChars";
 
 const testCases = [
   { input: "abcdef", output: true },
@@ -7,10 +10,28 @@ const testCases = [
   { input: "abcaef", output: false }
 ];
 
-describe("unique characters in the input string", () => {
-  testCases.forEach(({ input, output }) => {
-    it(`should return ${output}`, () => {
+// describe("unique characters in the input string", () => {
+//   testCases.forEach(({ input, output }) => {
+//     test(`"${input}" contains only unique characters`, () => {
+//       expect(isUnique(input)).toBe(output);
+//     });
+//   });
+// });
+
+describe.each(testCases)(
+  "unique characters in the input string (lastIndexOf)",
+  ({ input, output }) => {
+    test(`"${input}" contains only unique characters`, () => {
       expect(isUnique(input)).toBe(output);
     });
-  });
-});
+  }
+);
+
+describe.each(testCases)(
+  "unique characters in the input string (Set)",
+  ({ input, output }) => {
+    test(`"${input}" contains only unique characters`, () => {
+      expect(isUniqueWithSet(input)).toBe(output);
+    });
+  }
+);

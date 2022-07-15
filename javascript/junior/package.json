@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --verbose",
+    "test": "jest",
+    "test:verbose": "jest --verbose",
     "compile": "tsc"
   },
   "jest": {
