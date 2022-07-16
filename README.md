@@ -18,6 +18,7 @@
 12. [built-in-functions](javascript/junior/built-in-functions)
 13. [deep-copy](javascript/junior/deep-copy)
 14. [fill-array](javascript/junior/fill-array)
+15. [flat-array](javascript/junior/flat-array)
 
 ### Middle level
 
