@@ -19,6 +19,7 @@
 13. [deep-copy](javascript/junior/deep-copy)
 14. [fill-array](javascript/junior/fill-array)
 15. [flat-array](javascript/junior/flat-array)
+16. [remove-duplicates](javascript/junior/remove-duplicates)
 
 ### Middle level
 
