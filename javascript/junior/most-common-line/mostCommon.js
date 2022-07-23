@@ -3,27 +3,35 @@ const mostCommon = (arrayOfStrings) => {
   let maxFreqCount = 0;
   let maxFreqString = arrayOfStrings[0];
 
-  for (let index = 0; index < arrayOfStrings.length; index++) {
-    const element = arrayOfStrings[index];
+  let output = "";
 
-    if (map[element]) {
-      map[element]++;
-    } else {
-      map[element] = 1;
+  if (arrayOfStrings.length === 0) {
+    output = `"Sorry. The input array is empty"`;
+  } else {
+    for (let index = 0; index < arrayOfStrings.length; index++) {
+      const element = arrayOfStrings[index];
+
+      if (map[element]) {
+        map[element]++;
+      } else {
+        map[element] = 1;
+      }
+
+      if (map[element] > maxFreqCount) {
+        maxFreqCount = map[element];
+        maxFreqString = element;
+      }
     }
 
-    if (map[element] > maxFreqCount) {
-      maxFreqCount = map[element];
-      maxFreqString = element;
-    }
+    output = maxFreqString;
   }
 
-  return maxFreqString;
+  return output;
 };
 
 const inputArrayOfStrings1 = ["j", "k", "k", "l", "m", "n", "o"];
 const inputArrayOfStrings2 = ["ijk", "ijk", "xyz", "xyz", "ijk", "opr", "stu"];
-const inputArrayOfStrings3 = ["abc", "def"];
+const inputArrayOfStrings3 = [];
 
 const output1 = mostCommon(inputArrayOfStrings1);
 const output2 = mostCommon(inputArrayOfStrings2);
