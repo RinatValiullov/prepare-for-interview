@@ -20,6 +20,7 @@
 14. [fill-array](javascript/junior/fill-array)
 15. [flat-array](javascript/junior/flat-array)
 16. [remove-duplicates](javascript/junior/remove-duplicates)
+17. [most-common-line](javascript/junior/most-common-line)
 
 ### Middle level
 
