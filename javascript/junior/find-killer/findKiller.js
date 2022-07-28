@@ -1,10 +1,13 @@
 const people = {
   James: ["Sally", "Brad", "Pette"],
   Grag: ["George", "Matt", "Pette"],
-  Bill: ["Dilan", "Lucas"],
+  Bill: ["Dilan", "Lucas"]
 };
 
 const killed = ["Pette", "Brad"];
+
+const compare = (target, source) =>
+  source.every((name) => target.includes(name));
 
 const getKiller = (suspect, dead) => {
   for (const name in suspect) {
@@ -21,8 +24,5 @@ const getKiller = (suspect, dead) => {
     }
   }
 };
-
-const compare = (target, source) =>
-  source.every((name) => target.includes(name));
 
 getKiller(people, killed);
