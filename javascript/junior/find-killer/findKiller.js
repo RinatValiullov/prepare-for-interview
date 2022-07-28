@@ -4,25 +4,39 @@ const people = {
   Bill: ["Dilan", "Lucas"]
 };
 
-const killed = ["Pette", "Brad"];
+const killed1 = ["Pette", "Brad"];
+const killed2 = ["Matt", "George"];
+const killed3 = ["Dilan", "Lucas"];
 
 const compare = (target, source) =>
   source.every((name) => target.includes(name));
 
 const getKiller = (suspect, dead) => {
-  for (const name in suspect) {
-    const meet = suspect[name];
+  const suspectNames = Object.keys(suspect);
+  const victimNames = Object.values(suspect);
 
-    if (compare(meet, dead)) {
-      console.log(
-        "%c%s",
-        "color: chartreuse; font: 1.4rem/1 Verdana",
-        `${name} is killer`
-      );
+  // const murders = [];
+
+  for (let i = 0; i < victimNames.length; i++) {
+    if (compare(victimNames[i], dead)) {
+      // murders.push(suspectNames[i]);
+      return `${suspectNames[i]} is killer`;
     } else {
-      return;
+      continue;
     }
+
+    // if (murders.length > 1) {
+    //   console.log(`${murders.join(" and ")} are killers`);
+    // } else if (murders.length === 1) {
+    //   console.log(`${suspectNames[i]} is killer`);
+    // }
   }
 };
 
-getKiller(people, killed);
+const output1 = getKiller(people, killed1);
+const output2 = getKiller(people, killed2);
+const output3 = getKiller(people, killed3);
+
+console.log(`For [${killed1}] -> ${output1}`);
+console.log(`For [${killed2}] -> ${output2}`);
+console.log(`For [${killed3}] -> ${output3}`);
