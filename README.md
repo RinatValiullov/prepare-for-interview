@@ -22,6 +22,7 @@
 16. [remove-duplicates](javascript/junior/remove-duplicates)
 17. [most-common-line](javascript/junior/most-common-line)
 18. [rotated-string](javascript/junior/rotated-string)
+19. [array-subset](javascript/junior/array-subset)
 
 ### Middle level
 
