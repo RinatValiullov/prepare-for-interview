@@ -23,6 +23,7 @@
 17. [most-common-line](javascript/junior/most-common-line)
 18. [rotated-string](javascript/junior/rotated-string)
 19. [array-subset](javascript/junior/array-subset)
+20. [check-anagrams](javascript/junior/check-anagrams)
 
 ### Middle level
 
