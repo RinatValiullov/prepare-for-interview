@@ -24,6 +24,7 @@
 18. [rotated-string](javascript/junior/rotated-string)
 19. [array-subset](javascript/junior/array-subset)
 20. [check-anagrams](javascript/junior/check-anagrams)
+21. [flip-matrix](javascript/junior/flip-matrix)
 
 ### Middle level
 
