@@ -1,9 +1,3 @@
-/*
-  Takes an array(1) and callback function. Then returns a new array(2).
-  Each element of a new array(2) is the result of appling the callback function
-  to the original element.
-*/
-
 const map = (array: number[] | string[], callback: (inp: any) => void) => {
   let output = [];
   for (let elem of array) {
