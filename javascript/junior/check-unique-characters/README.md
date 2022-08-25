@@ -13,7 +13,7 @@ Output:
 ```
 checkUniqueChars(inputString1); // "4rontender": false
 
-checkUniqueChars(inputString2); // "coder": { hasUniqueCharacters: true, chars: Set(5) { 'c', 'o', 'd', 'e', 'r' } }
+checkUniqueChars(inputString2); // "coder": true
 ```
 
 ### Variant 2:

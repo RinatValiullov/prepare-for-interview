@@ -4,10 +4,10 @@ import {
 } from "../check-unique-characters/hasUniqueChars";
 
 const testCases = [
-  { input: "abcdef", output: true },
-  { input: "123456", output: true },
-  { input: "abcABC", output: true },
-  { input: "abcaef", output: false }
+  { input: "abcdef", expected: true },
+  { input: "123456", expected: true },
+  { input: "abcABC", expected: true },
+  { input: "abcaef", expected: false }
 ];
 
 // describe("unique characters in the input string", () => {
@@ -20,18 +20,18 @@ const testCases = [
 
 describe.each(testCases)(
   "unique characters in the input string (lastIndexOf)",
-  ({ input, output }) => {
-    test(`"${input}" contains only unique characters`, () => {
-      expect(isUnique(input)).toBe(output);
+  ({ input, expected }) => {
+    test(`"${input}" contains only unique characters: ${expected}`, () => {
+      expect(isUnique(input)).toBe(expected);
     });
   }
 );
 
 describe.each(testCases)(
   "unique characters in the input string (Set)",
-  ({ input, output }) => {
-    test(`"${input}" contains only unique characters`, () => {
-      expect(isUniqueWithSet(input)).toBe(output);
+  ({ input, expected }) => {
+    test(`"${input}" contains only unique characters: ${expected}`, () => {
+      expect(isUniqueWithSet(input)).toBe(expected);
     });
   }
 );
