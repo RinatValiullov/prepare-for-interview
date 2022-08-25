@@ -1,5 +1,3 @@
-export { };
-
 const checkUniqueChars = (string: string): boolean => {
   let chars = new Set();
 
@@ -20,3 +18,5 @@ const result2 = checkUniqueChars(inputString2);
 
 console.log(`"${inputString1}": ${result1}`);
 console.log(`"${inputString2}":`, result2);
+
+export { checkUniqueChars };
