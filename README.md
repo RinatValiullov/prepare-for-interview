@@ -25,6 +25,7 @@
 19. [array-subset](javascript/junior/array-subset)
 20. [check-anagrams](javascript/junior/check-anagrams)
 21. [flip-matrix](javascript/junior/flip-matrix)
+22. [two-sum](javascript/junior/two-sum)
 
 ### Middle level
 
