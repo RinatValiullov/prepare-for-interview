@@ -26,6 +26,7 @@
 20. [check-anagrams](javascript/junior/check-anagrams)
 21. [flip-matrix](javascript/junior/flip-matrix)
 22. [two-sum](javascript/junior/two-sum)
+23. [search-number](javascript/junior/search-number)
 
 ### Middle level
 

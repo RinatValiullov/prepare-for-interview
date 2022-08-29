@@ -1,4 +1,4 @@
-/* 1 way */
+/* 1 way: O(n2) time complexity */
 const twoSum = (numbers, target) => {
     for (let firstTerm = 0; firstTerm < numbers.length - 1; firstTerm++) {
         const firstElement = numbers[firstTerm];
@@ -19,11 +19,11 @@ const target3_1 = 10;
 const output1_1 = twoSum(numbers1_1, target1_1);
 const output2_1 = twoSum(numbers2_1, target2_1);
 const output3_1 = twoSum(numbers3_1, target3_1);
-console.log("1 way");
+console.log("1 way: O(n2) time complexity");
 console.log(`Elements in the array [${numbers1_1}] with indices ${output1_1?.join(" and ")} form a sum equal to ${target1_1}`);
 console.log(`Elements in the array [${numbers2_1}] with indices ${output2_1?.join(" and ")} form a sum equal to ${target2_1}`);
 console.log(`Elements in the array [${numbers3_1}] with indices ${output3_1?.join(" and ")} form a sum equal to ${target3_1}`);
-/* 2 way */
+/* 2 way: O(n) time complexity */
 const twoSumMap = (numbers, target) => {
     const indexMap = new Map();
     for (let i = 0; i < numbers.length; i++) {
