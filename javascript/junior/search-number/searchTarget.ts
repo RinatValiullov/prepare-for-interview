@@ -58,3 +58,5 @@ console.log(`1 way: O(n) ${output2_n}`);
 
 console.log(`2 way: O(log n) ${output1_logn}`);
 console.log(`2 way: O(log n) ${output2_logn}`);
+
+export { searchTarget_n, searchTarget_logn };

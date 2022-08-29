@@ -1,4 +1,3 @@
-"use strict";
 /* 1 way: O(n) time complexity */
 const searchTarget_n = (numbers, target) => {
     for (let i = 0; i < numbers.length; i++) {
@@ -49,3 +48,4 @@ console.log(`1 way: O(n) ${output1_n}`);
 console.log(`1 way: O(n) ${output2_n}`);
 console.log(`2 way: O(log n) ${output1_logn}`);
 console.log(`2 way: O(log n) ${output2_logn}`);
+export { searchTarget_n, searchTarget_logn };
