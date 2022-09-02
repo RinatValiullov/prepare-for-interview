@@ -20,7 +20,7 @@ true
 
 Input 2:
 ```
-const inputString = "(((15) ()) (8)) (((z)((y))))";
+const inputString = "(((15)())(8))(((z)((y))))";
 isBalanced(inputString);
 ```
 
@@ -32,7 +32,7 @@ true
 
 Input 3:
 ```
-const inputString = "(){()}(";
+const inputString = "(?){(:)}(_";
 isBalanced(inputString);
 ```
 

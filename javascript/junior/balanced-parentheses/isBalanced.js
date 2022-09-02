@@ -22,7 +22,7 @@ const isBalanced = (string) => {
     return !brackets.length;
 };
 const inputString1 = "[x] + (y)";
-const inputString2 = "( ( (15) () ) (8) )( ( (z) ( (y) ) ) )";
+const inputString2 = "(((15)())(8))(((z)((y))))";
 const inputString3 = "(?){(:)}(_";
 const inputString4 = "[({)]}";
 const output1 = isBalanced(inputString1);
