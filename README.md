@@ -27,6 +27,7 @@
 21. [flip-matrix](javascript/junior/flip-matrix)
 22. [two-sum](javascript/junior/two-sum)
 23. [search-number](javascript/junior/search-number)
+24. [balanced-parentheses](javascript/junior/balanced-parentheses)
 
 ### Middle level
 
