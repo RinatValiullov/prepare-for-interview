@@ -28,6 +28,7 @@
 22. [two-sum](javascript/junior/two-sum)
 23. [search-number](javascript/junior/search-number)
 24. [balanced-parentheses](javascript/junior/balanced-parentheses)
+25. [remove-letters](javascript/junior/remove-letters)
 
 ### Middle level
 
