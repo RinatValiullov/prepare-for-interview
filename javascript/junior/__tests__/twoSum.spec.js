@@ -1,3 +1,4 @@
+import { describe, expect, it } from "@jest/globals";
 import { twoSum, twoSumMap } from "../two-sum/twoSum";
 
 const testCases = [

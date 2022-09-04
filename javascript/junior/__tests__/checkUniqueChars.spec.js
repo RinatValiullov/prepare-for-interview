@@ -1,3 +1,4 @@
+import { describe, expect, test } from "@jest/globals";
 import { checkUniqueChars } from "../check-unique-characters/checkUniqueChars";
 
 const testCases = [
