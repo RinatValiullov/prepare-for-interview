@@ -29,6 +29,8 @@
 23. [search-number](javascript/junior/search-number)
 24. [balanced-parentheses](javascript/junior/balanced-parentheses)
 25. [remove-letters](javascript/junior/remove-letters)
+26. [data-structures](javascript/junior/data-structures)
+  * [queue](javascript/junior/data-structures/queue)
 
 ### Middle level
 
