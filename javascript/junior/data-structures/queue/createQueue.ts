@@ -25,6 +25,11 @@ class Queue {
     return value;
   }
 
+  peek() {
+    console.log(this.#storage[this.#first]);
+    return this.#storage[this.#first];
+  }
+
   get size() {
     return this.#last - this.#first;
   }
@@ -39,10 +44,12 @@ const queue = new Queue();
 queue.enqueue(5);
 queue.enqueue(12);
 queue.dequeue();
+queue.print();
+queue.peek();
 queue.enqueue(7);
 
 queue.print();
 
-console.log(queue.size);
+console.log("Queue size", queue.size);
 
 export { Queue };

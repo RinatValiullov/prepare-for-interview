@@ -5,11 +5,13 @@
 ```
 const queue = new Queue();
 
-queue.enqueue(5); // Queue { 0: 5 }
-queue.enqueue(12); // Queue { 0: 5, 1: 12 }
-queue.dequeue(); // value: 5, Queue { 1: 12 }
-queue.enqueue(7); // Queue { 1: 12, 2: 7 }
-queue.print(); // Queue { "1": 12, "2": 7 }
+queue.enqueue(5); // Queue { '0': 5 }
+queue.enqueue(12); // Queue { '0': 5, '1': 12 }
+queue.dequeue(); // value: 5, Queue { '1': 12 }
+queue.print(); // output Queue { 1: 12 }
+queue.peek(); // 12
+queue.enqueue(7); // Queue { '1': 12, '2': 7 }
+queue.print(); // output Queue { '1': 12, '2': 7 }
 queue.size(); // 2
 ```
 

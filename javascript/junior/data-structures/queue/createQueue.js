@@ -34,6 +34,10 @@ class Queue {
         __classPrivateFieldSet(this, _first, +__classPrivateFieldGet(this, _first) + 1);
         return value;
     }
+    peek() {
+        console.log(__classPrivateFieldGet(this, _storage)[__classPrivateFieldGet(this, _first)]);
+        return __classPrivateFieldGet(this, _storage)[__classPrivateFieldGet(this, _first)];
+    }
     get size() {
         return __classPrivateFieldGet(this, _last) - __classPrivateFieldGet(this, _first);
     }
@@ -47,7 +51,9 @@ const queue = new Queue();
 queue.enqueue(5);
 queue.enqueue(12);
 queue.dequeue();
+queue.print();
+queue.peek();
 queue.enqueue(7);
 queue.print();
-console.log(queue.size);
+console.log("Queue size", queue.size);
 export { Queue };
