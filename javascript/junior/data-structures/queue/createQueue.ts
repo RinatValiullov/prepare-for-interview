@@ -8,6 +8,8 @@ class Queue {
   enqueue(item: any) {
     this.#storage[this.#last] = item;
     this.#last++;
+
+    return this.size;
   }
 
   dequeue() {
@@ -29,6 +31,7 @@ class Queue {
 
   print() {
     console.log("Queue", this.#storage);
+    return this.#storage;
   }
 }
 

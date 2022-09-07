@@ -1,4 +1,4 @@
-## Create a `queue` data structure with the following operations: `enqueue` - add an entity to the rear position; `dequeue` - remove an entity from front position; `size` - get the size of the `queue`.
+## Create a `queue` data structure with the following operations: `enqueue` - add an entity to the rear position; `dequeue` - remove an entity from front position; `print` - show the current queue state in the console; `size` - get the `queue` size.
 
 ***
 

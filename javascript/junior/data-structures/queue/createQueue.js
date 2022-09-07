@@ -22,6 +22,7 @@ class Queue {
     enqueue(item) {
         __classPrivateFieldGet(this, _storage)[__classPrivateFieldGet(this, _last)] = item;
         __classPrivateFieldSet(this, _last, +__classPrivateFieldGet(this, _last) + 1);
+        return this.size;
     }
     dequeue() {
         if (this.size === 0) {
@@ -38,6 +39,7 @@ class Queue {
     }
     print() {
         console.log("Queue", __classPrivateFieldGet(this, _storage));
+        return __classPrivateFieldGet(this, _storage);
     }
 }
 _storage = new WeakMap(), _first = new WeakMap(), _last = new WeakMap();
