@@ -50,6 +50,6 @@ queue.enqueue(7);
 
 queue.print();
 
-console.log("Queue size", queue.size);
+console.log("Queue size:", queue.size);
 
 export { Queue };
