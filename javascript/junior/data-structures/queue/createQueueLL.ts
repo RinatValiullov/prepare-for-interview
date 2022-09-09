@@ -13,6 +13,7 @@ class LinkedList {
       this.#head = node;
       this.#tail = node;
     } else {
+      this.#tail.next = node;
       this.#tail = node;
     }
 
@@ -23,8 +24,8 @@ class LinkedList {
 
   removeFirst() {
     if (this.#length === 0) {
-      console.warn("The linked list is empty");
-      return;
+      console.warn("The structure is empty");
+      return null;
     }
 
     const value = this.#head.value;
@@ -32,6 +33,15 @@ class LinkedList {
     this.#length--;
 
     return value;
+  }
+
+  getFirst() {
+    if (this.#length === 0) {
+      console.warn("The structure is empty");
+      return null;
+    }
+
+    return this.#head.value;
   }
 
   size() {
@@ -45,10 +55,12 @@ class QueueLL extends LinkedList {
 
     this.enqueue = this.addLast;
     this.dequeue = this.removeFirst;
+    this.peek = this.getFirst;
   }
 
   enqueue: (item: any) => void;
   dequeue: () => any;
+  peek: () => any;
 
   get sizeQueue() {
     return super.size();
@@ -56,10 +68,19 @@ class QueueLL extends LinkedList {
 }
 
 const queue = new QueueLL();
-queue.enqueue(5);
-queue.enqueue(12);
-console.log(queue.dequeue());
-console.log(queue.enqueue(7));
+console.log("enqueue value 5", queue.enqueue(5));
+console.log("enqueue value 12", queue.enqueue(12));
+
+console.log("dequeue:", queue.dequeue());
+
+console.log("enqueue value 7", queue.enqueue(7));
+
+console.log("get the head:", queue.peek());
+
+console.log("dequeue:", queue.dequeue());
+console.log("get the head:", queue.peek());
+console.log("dequeue:", queue.dequeue());
+console.log("get the head:", queue.peek());
 
 console.log("Queue size: ", queue.sizeQueue);
 
