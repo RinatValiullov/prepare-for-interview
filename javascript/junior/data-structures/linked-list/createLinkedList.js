@@ -23,11 +23,20 @@ class LinkedList {
     }
     prepend(item) {
         let newNode = new LinkedListNode(item, this.head);
-        let head = this.head;
-        head = newNode;
+        this.head = newNode;
         if (!this.tail) {
-            let tail = this.tail;
-            tail = newNode;
+            this.tail = newNode;
+        }
+        return newNode;
+    }
+    append(item) {
+        let newNode = new LinkedListNode(item);
+        if (this.tail) {
+            this.tail.next = newNode;
+        }
+        this.tail = newNode;
+        if (!this.head) {
+            this.head = newNode;
         }
         return newNode;
     }
@@ -35,5 +44,6 @@ class LinkedList {
 const l_list = new LinkedList();
 console.log("prepend value 5:", l_list.prepend(5));
 console.log("prepend value 12:", l_list.prepend(12));
+console.log("append value 6:", l_list.append(6));
 // console.log(l_list);
 export { LinkedList };
