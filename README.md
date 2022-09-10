@@ -31,6 +31,7 @@
 25. [remove-letters](javascript/junior/remove-letters)
 26. [data-structures](javascript/junior/data-structures)
   * [queue](javascript/junior/data-structures/queue)
+  * [linked-list](javascript/junior/data-structures/linked-list)
 
 ### Middle level
 
