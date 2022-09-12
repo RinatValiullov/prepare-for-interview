@@ -1,12 +1,4 @@
-/*
-  LinkedListNode class represent one item in our collection of items
-*/
-class LinkedListNode {
-    constructor(value, next = null) {
-        this.value = value;
-        this.next = next;
-    }
-}
+import { LinkedListNode } from "./createLinkedListNode.js";
 class LinkedList {
     constructor(comparator) {
         this.head = null;
@@ -66,6 +58,20 @@ class LinkedList {
         }
         return deleteNode;
     }
+    deleteHead() {
+        if (!this.head) {
+            return null;
+        }
+        let deletedHead = this.head;
+        if (this.head.next) {
+            this.head = this.head.next;
+        }
+        else {
+            this.head = null;
+            this.tail = null;
+        }
+        return deletedHead;
+    }
 }
 const l_list = new LinkedList();
 console.log("prepend value 5:", l_list.prepend(5));
@@ -73,5 +79,6 @@ console.log("prepend value 12:", l_list.prepend(12));
 console.log("append value 6:", l_list.append(6));
 console.log("append value 7:", l_list.append(7));
 console.log("delete value 12:", l_list.delete(12));
+console.log("delete head:", l_list.deleteHead());
 console.log(l_list);
 export { LinkedList };
