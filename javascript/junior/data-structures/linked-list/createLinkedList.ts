@@ -91,6 +91,28 @@ class LinkedList {
 
     return deletedHead;
   }
+
+  deleteTail() {
+    const deletedTail = this.tail;
+    if (this.head === this.tail) {
+      this.head = null;
+      this.tail = null;
+      return deletedTail;
+    }
+
+    let current = this.head;
+    while (current.next) {
+      if (!current.next.next) {
+        current.next = null;
+      } else {
+        current = current.next;
+      }
+    }
+
+    this.tail = current;
+
+    return deletedTail;
+  }
 }
 
 const l_list = new LinkedList();
@@ -100,6 +122,7 @@ console.log("append value 6:", l_list.append(6));
 console.log("append value 7:", l_list.append(7));
 console.log("delete value 12:", l_list.delete(12));
 console.log("delete head:", l_list.deleteHead());
+console.log("delete tail:", l_list.deleteTail());
 
 console.log(l_list);
 
