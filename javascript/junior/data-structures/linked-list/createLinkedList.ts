@@ -113,6 +113,14 @@ class LinkedList {
 
     return deletedTail;
   }
+
+  forEach(fn_cb: (node: any) => void) {
+    let current = this.head;
+    while (current) {
+      fn_cb(current);
+      current = current.next;
+    }
+  }
 }
 
 const l_list = new LinkedList();
@@ -121,8 +129,11 @@ console.log("prepend value 12:", l_list.prepend(12));
 console.log("append value 6:", l_list.append(6));
 console.log("append value 7:", l_list.append(7));
 console.log("delete value 12:", l_list.delete(12));
+console.log("append value 4:", l_list.append(4));
 console.log("delete head:", l_list.deleteHead());
 console.log("delete tail:", l_list.deleteTail());
+
+l_list.forEach((node) => console.log("doubled:", node.value * 2));
 
 console.log(l_list);
 
