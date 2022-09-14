@@ -121,6 +121,17 @@ class LinkedList {
       current = current.next;
     }
   }
+
+  reverseForEach(fn_cb: (node: any) => void) {
+    function tick(node: { value: any; next: any }) {
+      if (node) {
+        tick(node.next);
+        fn_cb(node);
+      }
+    }
+
+    tick(this.head);
+  }
 }
 
 const l_list = new LinkedList();
@@ -134,6 +145,8 @@ console.log("delete head:", l_list.deleteHead());
 console.log("delete tail:", l_list.deleteTail());
 
 l_list.forEach((node) => console.log("doubled:", node.value * 2));
+
+l_list.reverseForEach((node) => console.log("half:", node.value / 2));
 
 console.log(l_list);
 
