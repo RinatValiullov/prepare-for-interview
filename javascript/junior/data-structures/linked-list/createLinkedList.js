@@ -107,6 +107,19 @@ class LinkedList {
         }
         tick(this.head);
     }
+    find(item) {
+        if (!this.head) {
+            return null;
+        }
+        let current = this.head;
+        while (current) {
+            if (this.comparator(current.value, item) === 0) {
+                return current;
+            }
+            current = current.next;
+        }
+        return null;
+    }
 }
 const l_list = new LinkedList();
 console.log("prepend value 5:", l_list.prepend(5));
@@ -119,5 +132,6 @@ console.log("delete head:", l_list.deleteHead());
 console.log("delete tail:", l_list.deleteTail());
 l_list.forEach((node) => console.log("doubled:", node.value * 2));
 l_list.reverseForEach((node) => console.log("half:", node.value / 2));
+console.log("find 6", l_list.find(6));
 console.log(l_list);
 export { LinkedList };
