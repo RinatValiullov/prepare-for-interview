@@ -32,6 +32,7 @@
 26. [data-structures](javascript/junior/data-structures)
   * [queue](javascript/junior/data-structures/queue)
   * [linked-list](javascript/junior/data-structures/linked-list)
+27. [deep-equal](javascript/junior/deep-equal)
 
 ### Middle level
 
