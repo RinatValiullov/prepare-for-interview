@@ -20,6 +20,6 @@ const output1 = fibonacciSequence(LEN1);
 const output2 = fibonacciSequence(LEN2);
 
 console.log("Fibonacci sequence for 8 is:", output1);
-console.log("Fibonacci sequence for 8 is:", output2);
+console.log("Fibonacci sequence for 15 is:", output2);
 
 export { fibonacciSequence };
