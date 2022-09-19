@@ -34,6 +34,7 @@
   * [linked-list](javascript/junior/data-structures/linked-list)
   * [stack](javascript/junior/data-structures/stack)
 27. [deep-equal](javascript/junior/deep-equal)
+28. [fibonacci-sequence](javascript/junior/fibonacci-sequence)
 
 ### Middle level
 
