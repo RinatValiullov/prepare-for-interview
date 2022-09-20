@@ -5,7 +5,12 @@ const bind = (context, fn, ...args) => {
     };
 };
 const log = function (...props) {
-    console.log(this.nick, this.age, ...props);
+    const result = {
+        nickName: this.nick,
+        age: this.age,
+        ...props
+    };
+    return Object.values(result).join(", ");
 };
 const user = {
     nick: "tor",

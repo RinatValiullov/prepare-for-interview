@@ -1,5 +1,10 @@
+interface User {
+  nick: string;
+  age: number;
+}
+
 const bind = (
-  context: any,
+  context: {},
   fn: any,
   ...args: (string | number | undefined)[]
 ) => {
@@ -8,11 +13,16 @@ const bind = (
   };
 };
 
-const log = function (this: any, ...props: any[]) {
-  console.log(this.nick, this.age, ...props);
+const log = function (this: User, ...props: any[]) {
+  const result = {
+    nickName: this.nick,
+    age: this.age,
+    ...props
+  };
+  return Object.values(result).join(", ");
 };
 
-const user = {
+const user: User = {
   nick: "tor",
   age: 18
 };
