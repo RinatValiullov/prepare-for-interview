@@ -35,6 +35,7 @@
   * [stack](javascript/junior/data-structures/stack)
 27. [deep-equal](javascript/junior/deep-equal)
 28. [fibonacci-sequence](javascript/junior/fibonacci-sequence)
+29. [universal-sum](javascri9t/junior/universal-sum)
 
 ### Middle level
 
